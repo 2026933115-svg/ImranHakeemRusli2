@@ -1,0 +1,82 @@
+<!-- Imran Hakeem bin Rusli 2026933115 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Chocolate Shop</title>
+    <link rel="stylesheet" href="Style-Assignment%201%20csc574.css">
+</head>
+
+<body>
+
+    <div id="header">
+        <img src="Brown_Cake_Shop_Logo-removebg-preview.png" alt="My Choc. Shop logo" width="110" height="100">
+        <ul id="navbar">
+            <li><a class="active" href="Index-Assignment%201.html">Home</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cart.html">Cart (<span id="count">0</span>)</a></li>
+        </ul>
+    </div>
+
+    <h1>Welcome to MY ChoCo. Shop</h1>
+    <h2>Indulge in the Sweetness</h2>
+    <p style="text-align:center"><i>We offer a wide variety of delicious chocolates for every occasion. Explore our products and find your favorite treats!</i></p>
+    <p style="text-align:center"><a class="btn" href="product.html">Shop Now</a></p>
+
+    <div class="section">
+        <h2>Featured Products</h2>
+        <div class="box-container">
+            <div class="box">
+                <img src="https://jgcj.jayagrocer.com/cdn/shop/files/183931-U-1-1.jpg?v=1776853161&amp;width=1000" alt="Cadbury Dairy Milk Bubbly">
+                <h5>Dairy Milk Bubbly</h5>
+                <h6><i>New Release!</i></h6>
+                <h4>RM9.90</h4>
+                <button class="btn" onclick="addToCart('Dairy Milk Bubbly', 9.90)">Add to Cart</button>
+            </div>
+            <div class="box">
+                <img src="milkChoc.jpg" alt="Milk Chocolate">
+                <h5>Milk Chocolate</h5>
+                <h6><b>Best Selling</b></h6>
+                <h4>RM5.00</h4>
+                <button class="btn" onclick="addToCart('Milk Chocolate', 5)">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="banner">
+        <h2 style="color:white">Up to 50% Off On Year End Sales</h2>
+        <p>Buy 2 Free 1 (PWP) on selected chocolate brands. Old stocks 80% OFF while it lasts!</p>
+    </div>
+
+    <audio controls loop>
+      <source src="C:\Users\Acer\Downloads\574 asg1\backaud.m4a" type="audio/mp4">
+        Your browser does not support audio.
+    </audio>
+
+    <h2>How Chocolate is Made</h2>
+    <video controls width="500">
+        <source src="C:\Users\Acer\Downloads\574 asg1\vid.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <p style="text-align:center">The property of <a href="https://www.youtube.com/@buzzfeedtasty" target="_blank">Tasty&copy;</a></p>
+
+    <footer>
+        <h4>Sign up for newsletters</h4>
+        <form onsubmit="return subscribe()">
+            <input type="email" placeholder="Your email" required>
+            <button class="btn" type="submit">Sign Up</button>
+        </form>
+        <p><strong>Address:</strong> No. 2, Kampung Guar Gajah, 02600 Arau, Perlis<br>
+            <strong>Phone:</strong> +6019-527 4250<br>
+            <strong>Hours:</strong> 10.00 - 18.00, Mon - Sat</p>
+        <p><a href="https://www.instagram.com/mycho_colateshop/" target="_blank">Instagram</a></p>
+        <p>&copy; 2026 My Choc. Shop</p>
+    </footer>
+
+    <script src="Script-Assignment%201%20csc574.js"></script>
+</body>
+
+</html>

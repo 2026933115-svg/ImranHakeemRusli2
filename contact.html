@@ -1,0 +1,61 @@
+<!-- Imran Hakeem bin Rusli 2026933115 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - My Chocolate Shop</title>
+    <link rel="stylesheet" href="Style-Assignment%201%20csc574.css">
+</head>
+
+<body>
+
+    <div id="header">
+        <img src="Brown_Cake_Shop_Logo-removebg-preview.png" alt="My Choc. Shop logo" width="110" height="100">
+        <ul id="navbar">
+            <li><a href="Index-Assignment%201.html">Home</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class="active" href="contact.html">Contact</a></li>
+            <li><a href="cart.html">Cart (<span id="count">0</span>)</a></li>
+        </ul>
+    </div>
+
+    <h1>Contact Us</h1>
+
+    <div class="section">
+        <p><strong>Address:</strong> <a href="https://maps.app.goo.gl/zFjHZhhKtSvfuitW6?g_st=ic" target="_blank">No. 2, Kampung Guar Gajah, 02600 Arau, Perlis</a><br>
+            <strong>Phone:</strong> <a href="tel:+60195274250">+6019-527 4250</a><br>
+            <strong>Hours:</strong> 10.00 - 18.00, Mon - Sat</p>
+
+        <h2>Send Us a Message</h2>
+        <form onsubmit="return sendMessage()">
+            <input type="text" placeholder="Your name" required>
+            <input type="email" placeholder="Your email" required>
+            <select>
+                <option>General enquiry</option>
+                <option>Order or delivery</option>
+                <option>Feedback</option>
+            </select>
+            <textarea rows="5" placeholder="Your message" required></textarea>
+            <button class="btn" type="submit">Send</button>
+        </form>
+    </div>
+
+    <footer>
+        <h4>Sign up for newsletters</h4>
+        <form onsubmit="return subscribe()">
+            <input type="email" placeholder="Your email" required>
+            <button class="btn" type="submit">Sign Up</button>
+        </form>
+        <p><strong>Address:</strong> No. 2, Kampung Guar Gajah, 02600 Arau, Perlis<br>
+            <strong>Phone:</strong> +6019-527 4250<br>
+            <strong>Hours:</strong> 10.00 - 18.00, Mon - Sat</p>
+        <p><a href="https://www.instagram.com/mycho_colateshop/" target="_blank">Instagram</a></p>
+        <p>&copy; 2026 My Choc. Shop</p>
+    </footer>
+
+    <script src="Script-Assignment%201%20csc574.js"></script>
+</body>
+
+</html>

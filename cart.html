@@ -1,0 +1,58 @@
+<!-- Imran Hakeem bin Rusli 2026933115 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cart - My Chocolate Shop</title>
+    <link rel="stylesheet" href="Style-Assignment%201%20csc574.css">
+</head>
+
+<body>
+
+    <div id="header">
+        <img src="Brown_Cake_Shop_Logo-removebg-preview.png" alt="My Choc. Shop logo" width="110" height="100">
+        <ul id="navbar">
+            <li><a href="Index-Assignment%201.html">Home</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a class="active" href="cart.html">Cart (<span id="count">0</span>)</a></li>
+        </ul>
+    </div>
+
+    <h1>Your Cart</h1>
+
+    <div class="section">
+        <table>
+            <tr>
+                <th>Item</th>
+                <th>Price</th>
+                <th>Qty</th>
+                <th>Subtotal</th>
+                <th></th>
+            </tr>
+            <tbody id="cartList"></tbody>
+        </table>
+        <h3>Total: <span id="total">RM0.00</span></h3>
+        <a class="btn" href="product.html">Continue Shopping</a>
+        <button class="btn" onclick="checkout()">Checkout</button>
+    </div>
+
+    <footer>
+        <h4>Sign up for newsletters</h4>
+        <form onsubmit="return subscribe()">
+            <input type="email" placeholder="Your email" required>
+            <button class="btn" type="submit">Sign Up</button>
+        </form>
+        <p><strong>Address:</strong> No. 2, Kampung Guar Gajah, 02600 Arau, Perlis<br>
+            <strong>Phone:</strong> +6019-527 4250<br>
+            <strong>Hours:</strong> 10.00 - 18.00, Mon - Sat</p>
+        <p><a href="https://www.instagram.com/mycho_colateshop/" target="_blank">Instagram</a></p>
+        <p>&copy; 2026 My Choc. Shop</p>
+    </footer>
+
+    <script src="Script-Assignment%201%20csc574.js"></script>
+</body>
+
+</html>
